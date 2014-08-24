@@ -1,0 +1,3 @@
+[submodule "SceneKrift"]
+	path = SceneKrift
+	url = git@github.com:lukexi/SceneKrift.git
