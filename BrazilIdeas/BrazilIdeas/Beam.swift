@@ -14,10 +14,9 @@ class Beam: SCNNode {
     var beamNode : SCNNode
     var pyramidNode : SCNNode
     var rings : [SCNNode]
+    let height : CGFloat = 100.0
     
     override init() {
-        let height : CGFloat = 100.0
-        
         beamNode = SCNNode()
         beamNode.geometry = SCNCylinder()
         beamNode.scale = SCNVector3(x: 1, y: height * 2, z: 1)
@@ -39,6 +38,8 @@ class Beam: SCNNode {
             let ring = SCNNode()
             ring.geometry = SCNTorus(ringRadius: scale, pipeRadius: 0.25)
             ring.position = SCNVector3(x: 0, y: randFloat() * height, z: 0)
+            ring.physicsBody = SCNPhysicsBody(type: .Dynamic, shape: nil)
+            ring.physicsBody.collisionBitMask = 0;
             rings.append(ring)
         }
         
@@ -55,5 +56,12 @@ class Beam: SCNNode {
         fatalError("Sucks")
     }
 
-    
+    func update(time : NSTimeInterval) {
+        for ring in self.rings {
+            let distToCenter = ring.presentationNode().position.y - (height * 0.5)
+            let inverseSign = -1 * (distToCenter / abs(distToCenter))
+            let exponentialForce = pow(abs(distToCenter), 2) * 0.001
+            ring.physicsBody.applyForce(SCNVector3(x: 0, y: inverseSign * exponentialForce, z: 0), impulse: true)
+        }
+    }
 }
