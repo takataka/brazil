@@ -15,15 +15,20 @@ class GameViewController: NSViewController {
     
     override func awakeFromNib(){
         // create a new scene
-        let scene = SCNScene(named: "art.scnassets/ship.dae")
+        let scene = SCNScene()
+        
+        let floorNode = SCNNode()
+        floorNode.geometry = SCNFloor()
+        scene.rootNode.addChildNode(floorNode)
         
         // create and add a camera to the scene
         let cameraNode = SCNNode()
         cameraNode.camera = SCNCamera()
+        cameraNode.camera.automaticallyAdjustsZRange = true
         scene.rootNode.addChildNode(cameraNode)
         
         // place the camera
-        cameraNode.position = SCNVector3(x: 0, y: 0, z: 15)
+        cameraNode.position = SCNVector3(x: 0, y: 2, z: 15)
         
         // create and add a light to the scene
         let lightNode = SCNNode()
@@ -38,18 +43,13 @@ class GameViewController: NSViewController {
         ambientLightNode.light.type = SCNLightTypeAmbient
         ambientLightNode.light.color = NSColor.darkGrayColor()
         scene.rootNode.addChildNode(ambientLightNode)
+                
+        for cool in 0..<10 {
+            let beam = Beam()
+            beam.position = SCNVector3(x: CGFloat(arc4random_uniform(100)) - 50, y: 0, z: CGFloat(arc4random_uniform(100)) - 50)
+            scene.rootNode.addChildNode(beam)
+        }
         
-        // retrieve the ship node
-        let ship = scene.rootNode.childNodeWithName("ship", recursively: true)
-        
-        // animate the 3d object
-        ship.runAction(SCNAction.repeatActionForever(SCNAction.rotateByX(0, y: 2, z: 0, duration: 1)))
-        let animation = CABasicAnimation(keyPath: "rotation")
-        animation.toValue = NSValue(SCNVector4: SCNVector4(x: CGFloat(0), y: CGFloat(1), z: CGFloat(0), w: CGFloat(M_PI)*2))
-        animation.duration = 3
-        animation.repeatCount = MAXFLOAT //repeat forever
-        ship.addAnimation(animation, forKey: nil)
-
         // set the scene to the view
         self.gameView!.scene = scene
         
