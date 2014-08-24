@@ -11,11 +11,11 @@ import QuartzCore
 
 class GameViewController: NSViewController {
     
-    @IBOutlet var gameView: GameView
+    @IBOutlet weak var gameView: GameView!
     
     override func awakeFromNib(){
         // create a new scene
-        let scene = SCNScene()
+        let scene = SCNScene(named: "art.scnassets/ship.dae")
         
         // create and add a camera to the scene
         let cameraNode = SCNNode()
@@ -23,30 +23,33 @@ class GameViewController: NSViewController {
         scene.rootNode.addChildNode(cameraNode)
         
         // place the camera
-        cameraNode.position = SCNVector3(x: 0, y: 0, z: 2)
+        cameraNode.position = SCNVector3(x: 0, y: 0, z: 15)
         
-        // create and add a 3d box to the scene
-        let boxNode = SCNNode()
-        boxNode.geometry = SCNBox(width: 1, height: 1, length: 1, chamferRadius: 0.02)
-        scene.rootNode.addChildNode(boxNode)
+        // create and add a light to the scene
+        let lightNode = SCNNode()
+        lightNode.light = SCNLight()
+        lightNode.light.type = SCNLightTypeOmni
+        lightNode.position = SCNVector3(x: 0, y: 10, z: 10)
+        scene.rootNode.addChildNode(lightNode)
         
-        // create and configure a material
-        let material = SCNMaterial()
-        material.diffuse.contents = NSImage(named: "texture")
-        material.specular.contents = NSColor.whiteColor()
-        material.specular.intensity = 0.2
-        material.locksAmbientWithDiffuse = true
+        // create and add an ambient light to the scene
+        let ambientLightNode = SCNNode()
+        ambientLightNode.light = SCNLight()
+        ambientLightNode.light.type = SCNLightTypeAmbient
+        ambientLightNode.light.color = NSColor.darkGrayColor()
+        scene.rootNode.addChildNode(ambientLightNode)
         
-        // set the material to the 3d object geometry
-        boxNode.geometry.firstMaterial = material
+        // retrieve the ship node
+        let ship = scene.rootNode.childNodeWithName("ship", recursively: true)
         
         // animate the 3d object
-        let animation: CABasicAnimation = CABasicAnimation(keyPath: "rotation")
-        animation.toValue = NSValue(SCNVector4: SCNVector4(x: 1, y: 1, z: 0, w: M_PI*2))
-        animation.duration = 5
+        ship.runAction(SCNAction.repeatActionForever(SCNAction.rotateByX(0, y: 2, z: 0, duration: 1)))
+        let animation = CABasicAnimation(keyPath: "rotation")
+        animation.toValue = NSValue(SCNVector4: SCNVector4(x: CGFloat(0), y: CGFloat(1), z: CGFloat(0), w: CGFloat(M_PI)*2))
+        animation.duration = 3
         animation.repeatCount = MAXFLOAT //repeat forever
-        boxNode.addAnimation(animation, forKey: "")
-        
+        ship.addAnimation(animation, forKey: nil)
+
         // set the scene to the view
         self.gameView!.scene = scene
         

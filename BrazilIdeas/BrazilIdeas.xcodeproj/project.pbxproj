@@ -7,48 +7,50 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D5DDB57119A99B6B00FAB669 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DDB57019A99B6B00FAB669 /* main.swift */; };
-		D5DDB57319A99B6B00FAB669 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DDB57219A99B6B00FAB669 /* AppDelegate.swift */; };
-		D5DDB57519A99B6B00FAB669 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DDB57419A99B6B00FAB669 /* GameView.swift */; };
-		D5DDB57719A99B6B00FAB669 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DDB57619A99B6B00FAB669 /* GameViewController.swift */; };
-		D5DDB57919A99B6B00FAB669 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5DDB57819A99B6B00FAB669 /* Images.xcassets */; };
-		D5DDB57C19A99B6B00FAB669 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5DDB57A19A99B6B00FAB669 /* MainMenu.xib */; };
-		D5DDB58819A99B6B00FAB669 /* BrazilIdeasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5DDB58719A99B6B00FAB669 /* BrazilIdeasTests.swift */; };
+		D5FAFA6619A9A19600CE17E1 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FAFA6519A9A19600CE17E1 /* main.swift */; };
+		D5FAFA6819A9A19600CE17E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FAFA6719A9A19600CE17E1 /* AppDelegate.swift */; };
+		D5FAFA6A19A9A19600CE17E1 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FAFA6919A9A19600CE17E1 /* GameView.swift */; };
+		D5FAFA6C19A9A19600CE17E1 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FAFA6B19A9A19600CE17E1 /* GameViewController.swift */; };
+		D5FAFA6E19A9A19600CE17E1 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = D5FAFA6D19A9A19600CE17E1 /* art.scnassets */; };
+		D5FAFA7019A9A19600CE17E1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5FAFA6F19A9A19600CE17E1 /* Images.xcassets */; };
+		D5FAFA7319A9A19600CE17E1 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5FAFA7119A9A19600CE17E1 /* MainMenu.xib */; };
+		D5FAFA7F19A9A19600CE17E1 /* BrazilIdeasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FAFA7E19A9A19600CE17E1 /* BrazilIdeasTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		D5DDB58219A99B6B00FAB669 /* PBXContainerItemProxy */ = {
+		D5FAFA7919A9A19600CE17E1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D5DDB56319A99B6B00FAB669 /* Project object */;
+			containerPortal = D5FAFA5819A9A19600CE17E1 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = D5DDB56A19A99B6B00FAB669;
+			remoteGlobalIDString = D5FAFA5F19A9A19600CE17E1;
 			remoteInfo = BrazilIdeas;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D5DDB56B19A99B6B00FAB669 /* BrazilIdeas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrazilIdeas.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D5DDB56F19A99B6B00FAB669 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D5DDB57019A99B6B00FAB669 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		D5DDB57219A99B6B00FAB669 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D5DDB57419A99B6B00FAB669 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
-		D5DDB57619A99B6B00FAB669 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
-		D5DDB57819A99B6B00FAB669 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		D5DDB57B19A99B6B00FAB669 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		D5DDB58119A99B6B00FAB669 /* BrazilIdeasTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrazilIdeasTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D5DDB58619A99B6B00FAB669 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D5DDB58719A99B6B00FAB669 /* BrazilIdeasTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrazilIdeasTests.swift; sourceTree = "<group>"; };
+		D5FAFA6019A9A19600CE17E1 /* BrazilIdeas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrazilIdeas.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5FAFA6419A9A19600CE17E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5FAFA6519A9A19600CE17E1 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		D5FAFA6719A9A19600CE17E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D5FAFA6919A9A19600CE17E1 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		D5FAFA6B19A9A19600CE17E1 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		D5FAFA6D19A9A19600CE17E1 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		D5FAFA6F19A9A19600CE17E1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D5FAFA7219A9A19600CE17E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		D5FAFA7819A9A19600CE17E1 /* BrazilIdeasTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrazilIdeasTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5FAFA7D19A9A19600CE17E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5FAFA7E19A9A19600CE17E1 /* BrazilIdeasTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrazilIdeasTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D5DDB56819A99B6B00FAB669 /* Frameworks */ = {
+		D5FAFA5D19A9A19600CE17E1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D5DDB57E19A99B6B00FAB669 /* Frameworks */ = {
+		D5FAFA7519A9A19600CE17E1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -58,59 +60,60 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D5DDB56219A99B6B00FAB669 = {
+		D5FAFA5719A9A19600CE17E1 = {
 			isa = PBXGroup;
 			children = (
-				D5DDB56D19A99B6B00FAB669 /* BrazilIdeas */,
-				D5DDB58419A99B6B00FAB669 /* BrazilIdeasTests */,
-				D5DDB56C19A99B6B00FAB669 /* Products */,
+				D5FAFA6219A9A19600CE17E1 /* BrazilIdeas */,
+				D5FAFA7B19A9A19600CE17E1 /* BrazilIdeasTests */,
+				D5FAFA6119A9A19600CE17E1 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		D5DDB56C19A99B6B00FAB669 /* Products */ = {
+		D5FAFA6119A9A19600CE17E1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D5DDB56B19A99B6B00FAB669 /* BrazilIdeas.app */,
-				D5DDB58119A99B6B00FAB669 /* BrazilIdeasTests.xctest */,
+				D5FAFA6019A9A19600CE17E1 /* BrazilIdeas.app */,
+				D5FAFA7819A9A19600CE17E1 /* BrazilIdeasTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D5DDB56D19A99B6B00FAB669 /* BrazilIdeas */ = {
+		D5FAFA6219A9A19600CE17E1 /* BrazilIdeas */ = {
 			isa = PBXGroup;
 			children = (
-				D5DDB57219A99B6B00FAB669 /* AppDelegate.swift */,
-				D5DDB57419A99B6B00FAB669 /* GameView.swift */,
-				D5DDB57619A99B6B00FAB669 /* GameViewController.swift */,
-				D5DDB57819A99B6B00FAB669 /* Images.xcassets */,
-				D5DDB57A19A99B6B00FAB669 /* MainMenu.xib */,
-				D5DDB56E19A99B6B00FAB669 /* Supporting Files */,
+				D5FAFA6719A9A19600CE17E1 /* AppDelegate.swift */,
+				D5FAFA6919A9A19600CE17E1 /* GameView.swift */,
+				D5FAFA6B19A9A19600CE17E1 /* GameViewController.swift */,
+				D5FAFA6D19A9A19600CE17E1 /* art.scnassets */,
+				D5FAFA6F19A9A19600CE17E1 /* Images.xcassets */,
+				D5FAFA7119A9A19600CE17E1 /* MainMenu.xib */,
+				D5FAFA6319A9A19600CE17E1 /* Supporting Files */,
 			);
 			path = BrazilIdeas;
 			sourceTree = "<group>";
 		};
-		D5DDB56E19A99B6B00FAB669 /* Supporting Files */ = {
+		D5FAFA6319A9A19600CE17E1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				D5DDB56F19A99B6B00FAB669 /* Info.plist */,
-				D5DDB57019A99B6B00FAB669 /* main.swift */,
+				D5FAFA6419A9A19600CE17E1 /* Info.plist */,
+				D5FAFA6519A9A19600CE17E1 /* main.swift */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		D5DDB58419A99B6B00FAB669 /* BrazilIdeasTests */ = {
+		D5FAFA7B19A9A19600CE17E1 /* BrazilIdeasTests */ = {
 			isa = PBXGroup;
 			children = (
-				D5DDB58719A99B6B00FAB669 /* BrazilIdeasTests.swift */,
-				D5DDB58519A99B6B00FAB669 /* Supporting Files */,
+				D5FAFA7E19A9A19600CE17E1 /* BrazilIdeasTests.swift */,
+				D5FAFA7C19A9A19600CE17E1 /* Supporting Files */,
 			);
 			path = BrazilIdeasTests;
 			sourceTree = "<group>";
 		};
-		D5DDB58519A99B6B00FAB669 /* Supporting Files */ = {
+		D5FAFA7C19A9A19600CE17E1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				D5DDB58619A99B6B00FAB669 /* Info.plist */,
+				D5FAFA7D19A9A19600CE17E1 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -118,13 +121,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D5DDB56A19A99B6B00FAB669 /* BrazilIdeas */ = {
+		D5FAFA5F19A9A19600CE17E1 /* BrazilIdeas */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D5DDB58B19A99B6B00FAB669 /* Build configuration list for PBXNativeTarget "BrazilIdeas" */;
+			buildConfigurationList = D5FAFA8219A9A19600CE17E1 /* Build configuration list for PBXNativeTarget "BrazilIdeas" */;
 			buildPhases = (
-				D5DDB56719A99B6B00FAB669 /* Sources */,
-				D5DDB56819A99B6B00FAB669 /* Frameworks */,
-				D5DDB56919A99B6B00FAB669 /* Resources */,
+				D5FAFA5C19A9A19600CE17E1 /* Sources */,
+				D5FAFA5D19A9A19600CE17E1 /* Frameworks */,
+				D5FAFA5E19A9A19600CE17E1 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -132,46 +135,46 @@
 			);
 			name = BrazilIdeas;
 			productName = BrazilIdeas;
-			productReference = D5DDB56B19A99B6B00FAB669 /* BrazilIdeas.app */;
+			productReference = D5FAFA6019A9A19600CE17E1 /* BrazilIdeas.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D5DDB58019A99B6B00FAB669 /* BrazilIdeasTests */ = {
+		D5FAFA7719A9A19600CE17E1 /* BrazilIdeasTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D5DDB58E19A99B6B00FAB669 /* Build configuration list for PBXNativeTarget "BrazilIdeasTests" */;
+			buildConfigurationList = D5FAFA8519A9A19600CE17E1 /* Build configuration list for PBXNativeTarget "BrazilIdeasTests" */;
 			buildPhases = (
-				D5DDB57D19A99B6B00FAB669 /* Sources */,
-				D5DDB57E19A99B6B00FAB669 /* Frameworks */,
-				D5DDB57F19A99B6B00FAB669 /* Resources */,
+				D5FAFA7419A9A19600CE17E1 /* Sources */,
+				D5FAFA7519A9A19600CE17E1 /* Frameworks */,
+				D5FAFA7619A9A19600CE17E1 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				D5DDB58319A99B6B00FAB669 /* PBXTargetDependency */,
+				D5FAFA7A19A9A19600CE17E1 /* PBXTargetDependency */,
 			);
 			name = BrazilIdeasTests;
 			productName = BrazilIdeasTests;
-			productReference = D5DDB58119A99B6B00FAB669 /* BrazilIdeasTests.xctest */;
+			productReference = D5FAFA7819A9A19600CE17E1 /* BrazilIdeasTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D5DDB56319A99B6B00FAB669 /* Project object */ = {
+		D5FAFA5819A9A19600CE17E1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = "Taka Taka";
 				TargetAttributes = {
-					D5DDB56A19A99B6B00FAB669 = {
+					D5FAFA5F19A9A19600CE17E1 = {
 						CreatedOnToolsVersion = 6.0;
 					};
-					D5DDB58019A99B6B00FAB669 = {
+					D5FAFA7719A9A19600CE17E1 = {
 						CreatedOnToolsVersion = 6.0;
-						TestTargetID = D5DDB56A19A99B6B00FAB669;
+						TestTargetID = D5FAFA5F19A9A19600CE17E1;
 					};
 				};
 			};
-			buildConfigurationList = D5DDB56619A99B6B00FAB669 /* Build configuration list for PBXProject "BrazilIdeas" */;
+			buildConfigurationList = D5FAFA5B19A9A19600CE17E1 /* Build configuration list for PBXProject "BrazilIdeas" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -179,28 +182,29 @@
 				en,
 				Base,
 			);
-			mainGroup = D5DDB56219A99B6B00FAB669;
-			productRefGroup = D5DDB56C19A99B6B00FAB669 /* Products */;
+			mainGroup = D5FAFA5719A9A19600CE17E1;
+			productRefGroup = D5FAFA6119A9A19600CE17E1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D5DDB56A19A99B6B00FAB669 /* BrazilIdeas */,
-				D5DDB58019A99B6B00FAB669 /* BrazilIdeasTests */,
+				D5FAFA5F19A9A19600CE17E1 /* BrazilIdeas */,
+				D5FAFA7719A9A19600CE17E1 /* BrazilIdeasTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		D5DDB56919A99B6B00FAB669 /* Resources */ = {
+		D5FAFA5E19A9A19600CE17E1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5DDB57919A99B6B00FAB669 /* Images.xcassets in Resources */,
-				D5DDB57C19A99B6B00FAB669 /* MainMenu.xib in Resources */,
+				D5FAFA6E19A9A19600CE17E1 /* art.scnassets in Resources */,
+				D5FAFA7019A9A19600CE17E1 /* Images.xcassets in Resources */,
+				D5FAFA7319A9A19600CE17E1 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D5DDB57F19A99B6B00FAB669 /* Resources */ = {
+		D5FAFA7619A9A19600CE17E1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -210,40 +214,40 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		D5DDB56719A99B6B00FAB669 /* Sources */ = {
+		D5FAFA5C19A9A19600CE17E1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5DDB57719A99B6B00FAB669 /* GameViewController.swift in Sources */,
-				D5DDB57319A99B6B00FAB669 /* AppDelegate.swift in Sources */,
-				D5DDB57519A99B6B00FAB669 /* GameView.swift in Sources */,
-				D5DDB57119A99B6B00FAB669 /* main.swift in Sources */,
+				D5FAFA6C19A9A19600CE17E1 /* GameViewController.swift in Sources */,
+				D5FAFA6819A9A19600CE17E1 /* AppDelegate.swift in Sources */,
+				D5FAFA6A19A9A19600CE17E1 /* GameView.swift in Sources */,
+				D5FAFA6619A9A19600CE17E1 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D5DDB57D19A99B6B00FAB669 /* Sources */ = {
+		D5FAFA7419A9A19600CE17E1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5DDB58819A99B6B00FAB669 /* BrazilIdeasTests.swift in Sources */,
+				D5FAFA7F19A9A19600CE17E1 /* BrazilIdeasTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		D5DDB58319A99B6B00FAB669 /* PBXTargetDependency */ = {
+		D5FAFA7A19A9A19600CE17E1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D5DDB56A19A99B6B00FAB669 /* BrazilIdeas */;
-			targetProxy = D5DDB58219A99B6B00FAB669 /* PBXContainerItemProxy */;
+			target = D5FAFA5F19A9A19600CE17E1 /* BrazilIdeas */;
+			targetProxy = D5FAFA7919A9A19600CE17E1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		D5DDB57A19A99B6B00FAB669 /* MainMenu.xib */ = {
+		D5FAFA7119A9A19600CE17E1 /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D5DDB57B19A99B6B00FAB669 /* Base */,
+				D5FAFA7219A9A19600CE17E1 /* Base */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
@@ -251,7 +255,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		D5DDB58919A99B6B00FAB669 /* Debug */ = {
+		D5FAFA8019A9A19600CE17E1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -293,7 +297,7 @@
 			};
 			name = Debug;
 		};
-		D5DDB58A19A99B6B00FAB669 /* Release */ = {
+		D5FAFA8119A9A19600CE17E1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -328,7 +332,7 @@
 			};
 			name = Release;
 		};
-		D5DDB58C19A99B6B00FAB669 /* Debug */ = {
+		D5FAFA8319A9A19600CE17E1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -339,7 +343,7 @@
 			};
 			name = Debug;
 		};
-		D5DDB58D19A99B6B00FAB669 /* Release */ = {
+		D5FAFA8419A9A19600CE17E1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -350,10 +354,10 @@
 			};
 			name = Release;
 		};
-		D5DDB58F19A99B6B00FAB669 /* Debug */ = {
+		D5FAFA8619A9A19600CE17E1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BrazilIdeas.app/Contents/MacOS/BrazilIdeas";
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
@@ -366,14 +370,14 @@
 				INFOPLIST_FILE = BrazilIdeasTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BrazilIdeas.app/Contents/MacOS/BrazilIdeas";
 			};
 			name = Debug;
 		};
-		D5DDB59019A99B6B00FAB669 /* Release */ = {
+		D5FAFA8719A9A19600CE17E1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BrazilIdeas.app/Contents/MacOS/BrazilIdeas";
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
@@ -382,39 +386,39 @@
 				INFOPLIST_FILE = BrazilIdeasTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BrazilIdeas.app/Contents/MacOS/BrazilIdeas";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D5DDB56619A99B6B00FAB669 /* Build configuration list for PBXProject "BrazilIdeas" */ = {
+		D5FAFA5B19A9A19600CE17E1 /* Build configuration list for PBXProject "BrazilIdeas" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D5DDB58919A99B6B00FAB669 /* Debug */,
-				D5DDB58A19A99B6B00FAB669 /* Release */,
+				D5FAFA8019A9A19600CE17E1 /* Debug */,
+				D5FAFA8119A9A19600CE17E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D5DDB58B19A99B6B00FAB669 /* Build configuration list for PBXNativeTarget "BrazilIdeas" */ = {
+		D5FAFA8219A9A19600CE17E1 /* Build configuration list for PBXNativeTarget "BrazilIdeas" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D5DDB58C19A99B6B00FAB669 /* Debug */,
-				D5DDB58D19A99B6B00FAB669 /* Release */,
+				D5FAFA8319A9A19600CE17E1 /* Debug */,
+				D5FAFA8419A9A19600CE17E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
-		D5DDB58E19A99B6B00FAB669 /* Build configuration list for PBXNativeTarget "BrazilIdeasTests" */ = {
+		D5FAFA8519A9A19600CE17E1 /* Build configuration list for PBXNativeTarget "BrazilIdeasTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D5DDB58F19A99B6B00FAB669 /* Debug */,
-				D5DDB59019A99B6B00FAB669 /* Release */,
+				D5FAFA8619A9A19600CE17E1 /* Debug */,
+				D5FAFA8719A9A19600CE17E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D5DDB56319A99B6B00FAB669 /* Project object */;
+	rootObject = D5FAFA5819A9A19600CE17E1 /* Project object */;
 }

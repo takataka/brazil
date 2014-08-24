@@ -14,9 +14,23 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D5DDB56A19A99B6B00FAB669"
+               BlueprintIdentifier = "D5FAFA5F19A9A19600CE17E1"
                BuildableName = "BrazilIdeas.app"
                BlueprintName = "BrazilIdeas"
+               ReferencedContainer = "container:BrazilIdeas.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "D5FAFA7719A9A19600CE17E1"
+               BuildableName = "BrazilIdeasTests.xctest"
+               BlueprintName = "BrazilIdeasTests"
                ReferencedContainer = "container:BrazilIdeas.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -32,7 +46,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D5DDB58019A99B6B00FAB669"
+               BlueprintIdentifier = "D5FAFA7719A9A19600CE17E1"
                BuildableName = "BrazilIdeasTests.xctest"
                BlueprintName = "BrazilIdeasTests"
                ReferencedContainer = "container:BrazilIdeas.xcodeproj">
@@ -42,7 +56,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D5DDB56A19A99B6B00FAB669"
+            BlueprintIdentifier = "D5FAFA5F19A9A19600CE17E1"
             BuildableName = "BrazilIdeas.app"
             BlueprintName = "BrazilIdeas"
             ReferencedContainer = "container:BrazilIdeas.xcodeproj">
@@ -61,7 +75,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D5DDB56A19A99B6B00FAB669"
+            BlueprintIdentifier = "D5FAFA5F19A9A19600CE17E1"
             BuildableName = "BrazilIdeas.app"
             BlueprintName = "BrazilIdeas"
             ReferencedContainer = "container:BrazilIdeas.xcodeproj">
@@ -79,7 +93,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D5DDB56A19A99B6B00FAB669"
+            BlueprintIdentifier = "D5FAFA5F19A9A19600CE17E1"
             BuildableName = "BrazilIdeas.app"
             BlueprintName = "BrazilIdeas"
             ReferencedContainer = "container:BrazilIdeas.xcodeproj">
