@@ -7,12 +7,13 @@
 //
 
 import SceneKit
+import SceneKrift
 
 func randFloat() -> CGFloat {
     return CGFloat(arc4random_uniform(1000)) / 1000
 }
 
-class GameView: SCNView {
+class GameView: OVRView {
     let player = SCNNode(geometry: SCNSphere(radius: 1))
     
     let possibleGeometries = [
@@ -26,25 +27,28 @@ class GameView: SCNView {
     ]
     
     override func awakeFromNib(){
+        super.awakeFromNib()
         // set the scene to the view
-        scene = SCNScene()
+        self.scene = SCNScene()
+        self.scene.background.contents = NSColor.redColor()
+        
+        self.window?.makeFirstResponder(self)
         
         // allows the user to manipulate the camera
 //        self.allowsCameraControl = true
         
         // show statistics such as fps and timing information
-        self.showsStatistics = true
+//        self.showsStatistics = true
         
         // configure the view
-        self.backgroundColor = NSColor.blackColor()
+//        self.backgroundColor = NSColor.blackColor()
         
         // create and add a camera to the scene
-        let cameraNode = player
-        cameraNode.camera = SCNCamera()
-//        scene.rootNode.addChildNode(cameraNode)
-        cameraNode.camera.automaticallyAdjustsZRange = true
+//        let cameraNode = player
+//        cameraNode.camera = SCNCamera()
+//        cameraNode.camera.automaticallyAdjustsZRange = true
         // place the camera
-        cameraNode.position = SCNVector3(x: 0, y: 0, z: 0)
+//        cameraNode.position = SCNVector3(x: 0, y: 0, z: 0)
         
         // create and add an ambient light to the scene
         let ambientLightNode = SCNNode()
@@ -84,7 +88,7 @@ class GameView: SCNView {
         let geom = gimmeGeometry().copy() as SCNGeometry
         let baseHue = randFloat()
         
-        let spire = SCNNode(geometry:SCNBox(width: 1, height: 1000, length: 1, chamferRadius: 0))
+        let spire = SCNNode(geometry:SCNBox(width: 5, height: 1000, length: 5, chamferRadius: 0))
         spire.geometry.firstMaterial.diffuse.contents = NSColor(
             hue:baseHue,
             saturation:0.8,
@@ -123,5 +127,10 @@ class GameView: SCNView {
         super.mouseDown(theEvent)
     }
     
-
+    override func keyDown(theEvent: NSEvent!) {
+        self.headNode.runAction(SCNAction.rotateByX(0, y: 1, z: 0, duration: 1))
+        if theEvent.keyCode == UInt16(NSLeftArrowFunctionKey) {
+            self.headNode.runAction(SCNAction.rotateByX(0, y: 1, z: 0, duration: 1))
+        }
+    }
 }

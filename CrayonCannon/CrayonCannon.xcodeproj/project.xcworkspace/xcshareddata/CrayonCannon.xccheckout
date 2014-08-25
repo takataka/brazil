@@ -10,6 +10,8 @@
 	<string>CrayonCannon</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
+		<key>8E0816747264096D892A4F17C49B3F3B0CD3E570</key>
+		<string>github.com:lukexi/SceneKrift.git</string>
 		<key>EC2A804F27761BFA3E1C1CFCBA47FFF9A5C6CF5B</key>
 		<string>github.com:takataka/brazil.git</string>
 	</dict>
@@ -17,6 +19,8 @@
 	<string>CrayonCannon/CrayonCannon.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
+		<key>8E0816747264096D892A4F17C49B3F3B0CD3E570</key>
+		<string>../../..SceneKrift</string>
 		<key>EC2A804F27761BFA3E1C1CFCBA47FFF9A5C6CF5B</key>
 		<string>../../..</string>
 	</dict>
@@ -35,6 +39,14 @@
 			<string>EC2A804F27761BFA3E1C1CFCBA47FFF9A5C6CF5B</string>
 			<key>IDESourceControlWCCName</key>
 			<string>brazil</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>8E0816747264096D892A4F17C49B3F3B0CD3E570</string>
+			<key>IDESourceControlWCCName</key>
+			<string>brazilSceneKrift</string>
 		</dict>
 	</array>
 </dict>

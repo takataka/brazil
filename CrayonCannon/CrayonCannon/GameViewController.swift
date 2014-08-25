@@ -12,7 +12,5 @@ import QuartzCore
 class GameViewController: NSViewController {
     
     @IBOutlet weak var gameView: GameView!
-    
-    
 
 }

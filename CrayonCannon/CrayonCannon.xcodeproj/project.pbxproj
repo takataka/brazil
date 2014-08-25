@@ -14,6 +14,8 @@
 		C266E10D19A9C8D7000BE40F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C266E10C19A9C8D7000BE40F /* Images.xcassets */; };
 		C266E11019A9C8D7000BE40F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C266E10E19A9C8D7000BE40F /* MainMenu.xib */; };
 		C266E11C19A9C8D7000BE40F /* CrayonCannonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C266E11B19A9C8D7000BE40F /* CrayonCannonTests.swift */; };
+		C266E12F19A9E8F1000BE40F /* SceneKrift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C266E12C19A9E8DC000BE40F /* SceneKrift.framework */; };
+		C266E13019A9E8F1000BE40F /* SceneKrift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C266E12C19A9E8DC000BE40F /* SceneKrift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,7 +26,42 @@
 			remoteGlobalIDString = C266E0FC19A9C8D6000BE40F;
 			remoteInfo = CrayonCannon;
 		};
+		C266E12B19A9E8DC000BE40F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C266E12519A9E8DC000BE40F /* SceneKrift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C2CCB72419A978A200FC0838;
+			remoteInfo = SceneKrift;
+		};
+		C266E12D19A9E8DC000BE40F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C266E12519A9E8DC000BE40F /* SceneKrift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C2CCB72F19A978A200FC0838;
+			remoteInfo = SceneKriftTests;
+		};
+		C266E13119A9E8F1000BE40F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C266E12519A9E8DC000BE40F /* SceneKrift.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C2CCB72319A978A200FC0838;
+			remoteInfo = SceneKrift;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C266E13319A9E8F1000BE40F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C266E13019A9E8F1000BE40F /* SceneKrift.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		C266E0FD19A9C8D6000BE40F /* CrayonCannon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrayonCannon.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -38,6 +75,7 @@
 		C266E11519A9C8D7000BE40F /* CrayonCannonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CrayonCannonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C266E11A19A9C8D7000BE40F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C266E11B19A9C8D7000BE40F /* CrayonCannonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrayonCannonTests.swift; sourceTree = "<group>"; };
+		C266E12519A9E8DC000BE40F /* SceneKrift.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SceneKrift.xcodeproj; path = ../SceneKrift/SceneKrift/SceneKrift.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C266E12F19A9E8F1000BE40F /* SceneKrift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +100,7 @@
 		C266E0F419A9C8D6000BE40F = {
 			isa = PBXGroup;
 			children = (
+				C266E12519A9E8DC000BE40F /* SceneKrift.xcodeproj */,
 				C266E0FF19A9C8D6000BE40F /* CrayonCannon */,
 				C266E11819A9C8D7000BE40F /* CrayonCannonTests */,
 				C266E0FE19A9C8D6000BE40F /* Products */,
@@ -115,6 +155,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		C266E12619A9E8DC000BE40F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C266E12C19A9E8DC000BE40F /* SceneKrift.framework */,
+				C266E12E19A9E8DC000BE40F /* SceneKriftTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -125,10 +174,12 @@
 				C266E0F919A9C8D6000BE40F /* Sources */,
 				C266E0FA19A9C8D6000BE40F /* Frameworks */,
 				C266E0FB19A9C8D6000BE40F /* Resources */,
+				C266E13319A9E8F1000BE40F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				C266E13219A9E8F1000BE40F /* PBXTargetDependency */,
 			);
 			name = CrayonCannon;
 			productName = CrayonCannon;
@@ -182,6 +233,12 @@
 			mainGroup = C266E0F419A9C8D6000BE40F;
 			productRefGroup = C266E0FE19A9C8D6000BE40F /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = C266E12619A9E8DC000BE40F /* Products */;
+					ProjectRef = C266E12519A9E8DC000BE40F /* SceneKrift.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				C266E0FC19A9C8D6000BE40F /* CrayonCannon */,
@@ -189,6 +246,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		C266E12C19A9E8DC000BE40F /* SceneKrift.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SceneKrift.framework;
+			remoteRef = C266E12B19A9E8DC000BE40F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C266E12E19A9E8DC000BE40F /* SceneKriftTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SceneKriftTests.xctest;
+			remoteRef = C266E12D19A9E8DC000BE40F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		C266E0FB19A9C8D6000BE40F /* Resources */ = {
@@ -236,6 +310,11 @@
 			isa = PBXTargetDependency;
 			target = C266E0FC19A9C8D6000BE40F /* CrayonCannon */;
 			targetProxy = C266E11619A9C8D7000BE40F /* PBXContainerItemProxy */;
+		};
+		C266E13219A9E8F1000BE40F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SceneKrift;
+			targetProxy = C266E13119A9E8F1000BE40F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -285,6 +364,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Applications/Xcode6-Beta6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include",
+					../SceneKrift/OculusSDK/LibOVR/Include,
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -322,6 +406,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Applications/Xcode6-Beta6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include",
+					../SceneKrift/OculusSDK/LibOVR/Include,
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
