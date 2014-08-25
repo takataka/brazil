@@ -10,7 +10,7 @@ import SceneKit
 import SceneKrift
 
 func randFloat() -> CGFloat {
-    return CGFloat(arc4random_uniform(1000)) / 1000
+    return CGFloat(arc4random_uniform(10000)) / 10000
 }
 
 class GameView: OVRView {
@@ -63,10 +63,8 @@ class GameView: OVRView {
         floorNode.position = SCNVector3(x: 0, y: -10, z: 0)
         floor.firstMaterial.diffuse.contents = NSColor.whiteColor()
         scene.rootNode.addChildNode(floorNode)
-        self.createCannonBall()
+        self.createPlayer()
         self.createCities()
-        
-        
     }
     
     func gimmeGeometry() -> SCNGeometry {
@@ -114,23 +112,54 @@ class GameView: OVRView {
 //        }
     }
     
-    func createCannonBall() {
+    func createPlayer() {
         player.physicsBody = SCNPhysicsBody(type: .Dynamic, shape: nil)
+        player.physicsBody.rollingFriction = 1
+        player.physicsBody.angularDamping = 1
         scene.rootNode.addChildNode(player)
-        
-        
+        player.addChildNode(self.headNode)
     }
     
     override func mouseDown(theEvent: NSEvent) {
-        player.physicsBody.applyForce(SCNVector3(
-            x: randFloat()*100 - 50, y: randFloat()*100, z: randFloat()*100 - 50), impulse: true)
+//        player.physicsBody.applyForce(SCNVector3(
+//            x: randFloat()*100 - 50, y: randFloat()*100, z: randFloat()*100 - 50), impulse: true)
         super.mouseDown(theEvent)
     }
     
     override func keyDown(theEvent: NSEvent!) {
-        self.headNode.runAction(SCNAction.rotateByX(0, y: 1, z: 0, duration: 1))
-        if theEvent.keyCode == UInt16(NSLeftArrowFunctionKey) {
-            self.headNode.runAction(SCNAction.rotateByX(0, y: 1, z: 0, duration: 1))
+        println("Key: \(theEvent.keyCode)")
+        let (left:UInt16, right:UInt16, down:UInt16, up:UInt16) = (123, 124, 125, 126)
+        let enter:UInt16 = 36
+        switch theEvent.keyCode {
+        case left:
+            player.runAction(
+                SCNAction.rotateByAngle(-1,
+                    aroundAxis: SCNVector3(x: 0, y: 1, z: 0),
+                    duration: 0.5))
+        case right:
+            player.runAction(
+                SCNAction.rotateByAngle(1,
+                    aroundAxis: SCNVector3(x: 0, y: 1, z: 0),
+                    duration: 0.5))
+        case up:
+            player.runAction(
+                SCNAction.rotateByAngle(1,
+                    aroundAxis: SCNVector3(x: 1, y: 0, z: 0),
+                    duration: 0.5))
+        case down:
+            player.runAction(
+                SCNAction.rotateByAngle(-1,
+                    aroundAxis: SCNVector3(x: 1, y: 0, z: 0),
+                    duration: 0.5))
+        case enter:
+            player.physicsBody.applyForce(
+                SCNVector3(
+                    x: player.rotation.x * 10,
+                    y: player.rotation.y * 10,
+                    z: player.rotation.z * 10),
+                impulse: true)
+        default:
+            return
         }
     }
 }
