@@ -7,25 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C25DCD3719AB44DC005AACB2 /* Notes.md in Sources */ = {isa = PBXBuildFile; fileRef = C25DCD3619AB44DC005AACB2 /* Notes.md */; };
 		C266E10319A9C8D6000BE40F /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C266E10219A9C8D6000BE40F /* main.swift */; };
 		C266E10519A9C8D6000BE40F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C266E10419A9C8D6000BE40F /* AppDelegate.swift */; };
 		C266E10719A9C8D6000BE40F /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C266E10619A9C8D6000BE40F /* GameView.swift */; };
 		C266E10919A9C8D6000BE40F /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C266E10819A9C8D6000BE40F /* GameViewController.swift */; };
 		C266E10D19A9C8D7000BE40F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C266E10C19A9C8D7000BE40F /* Images.xcassets */; };
 		C266E11019A9C8D7000BE40F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C266E10E19A9C8D7000BE40F /* MainMenu.xib */; };
-		C266E11C19A9C8D7000BE40F /* CrayonCannonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C266E11B19A9C8D7000BE40F /* CrayonCannonTests.swift */; };
 		C266E12F19A9E8F1000BE40F /* SceneKrift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C266E12C19A9E8DC000BE40F /* SceneKrift.framework */; };
 		C266E13019A9E8F1000BE40F /* SceneKrift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C266E12C19A9E8DC000BE40F /* SceneKrift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		C266E11619A9C8D7000BE40F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C266E0F519A9C8D6000BE40F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C266E0FC19A9C8D6000BE40F;
-			remoteInfo = CrayonCannon;
-		};
 		C266E12B19A9E8DC000BE40F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C266E12519A9E8DC000BE40F /* SceneKrift.xcodeproj */;
@@ -64,7 +57,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		C266E0FD19A9C8D6000BE40F /* CrayonCannon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrayonCannon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C25DCD3619AB44DC005AACB2 /* Notes.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = Notes.md; path = Parabopolis/Notes.md; sourceTree = "<group>"; };
+		C266E0FD19A9C8D6000BE40F /* Parabopolis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Parabopolis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C266E10119A9C8D6000BE40F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C266E10219A9C8D6000BE40F /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		C266E10419A9C8D6000BE40F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -72,9 +66,6 @@
 		C266E10819A9C8D6000BE40F /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		C266E10C19A9C8D7000BE40F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C266E10F19A9C8D7000BE40F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		C266E11519A9C8D7000BE40F /* CrayonCannonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CrayonCannonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C266E11A19A9C8D7000BE40F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C266E11B19A9C8D7000BE40F /* CrayonCannonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrayonCannonTests.swift; sourceTree = "<group>"; };
 		C266E12519A9E8DC000BE40F /* SceneKrift.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SceneKrift.xcodeproj; path = ../SceneKrift/SceneKrift/SceneKrift.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -87,22 +78,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C266E11219A9C8D7000BE40F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		C266E0F419A9C8D6000BE40F = {
 			isa = PBXGroup;
 			children = (
+				C25DCD3619AB44DC005AACB2 /* Notes.md */,
 				C266E12519A9E8DC000BE40F /* SceneKrift.xcodeproj */,
-				C266E0FF19A9C8D6000BE40F /* CrayonCannon */,
-				C266E11819A9C8D7000BE40F /* CrayonCannonTests */,
+				C266E0FF19A9C8D6000BE40F /* Parabopolis */,
 				C266E0FE19A9C8D6000BE40F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -110,13 +94,12 @@
 		C266E0FE19A9C8D6000BE40F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C266E0FD19A9C8D6000BE40F /* CrayonCannon.app */,
-				C266E11519A9C8D7000BE40F /* CrayonCannonTests.xctest */,
+				C266E0FD19A9C8D6000BE40F /* Parabopolis.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C266E0FF19A9C8D6000BE40F /* CrayonCannon */ = {
+		C266E0FF19A9C8D6000BE40F /* Parabopolis */ = {
 			isa = PBXGroup;
 			children = (
 				C266E10419A9C8D6000BE40F /* AppDelegate.swift */,
@@ -126,7 +109,8 @@
 				C266E10E19A9C8D7000BE40F /* MainMenu.xib */,
 				C266E10019A9C8D6000BE40F /* Supporting Files */,
 			);
-			path = CrayonCannon;
+			name = Parabopolis;
+			path = Parabopolis;
 			sourceTree = "<group>";
 		};
 		C266E10019A9C8D6000BE40F /* Supporting Files */ = {
@@ -134,23 +118,6 @@
 			children = (
 				C266E10119A9C8D6000BE40F /* Info.plist */,
 				C266E10219A9C8D6000BE40F /* main.swift */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		C266E11819A9C8D7000BE40F /* CrayonCannonTests */ = {
-			isa = PBXGroup;
-			children = (
-				C266E11B19A9C8D7000BE40F /* CrayonCannonTests.swift */,
-				C266E11919A9C8D7000BE40F /* Supporting Files */,
-			);
-			path = CrayonCannonTests;
-			sourceTree = "<group>";
-		};
-		C266E11919A9C8D7000BE40F /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				C266E11A19A9C8D7000BE40F /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -167,9 +134,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C266E0FC19A9C8D6000BE40F /* CrayonCannon */ = {
+		C266E0FC19A9C8D6000BE40F /* Parabopolis */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C266E11F19A9C8D7000BE40F /* Build configuration list for PBXNativeTarget "CrayonCannon" */;
+			buildConfigurationList = C266E11F19A9C8D7000BE40F /* Build configuration list for PBXNativeTarget "Parabopolis" */;
 			buildPhases = (
 				C266E0F919A9C8D6000BE40F /* Sources */,
 				C266E0FA19A9C8D6000BE40F /* Frameworks */,
@@ -181,28 +148,10 @@
 			dependencies = (
 				C266E13219A9E8F1000BE40F /* PBXTargetDependency */,
 			);
-			name = CrayonCannon;
-			productName = CrayonCannon;
-			productReference = C266E0FD19A9C8D6000BE40F /* CrayonCannon.app */;
+			name = Parabopolis;
+			productName = Parabopolis;
+			productReference = C266E0FD19A9C8D6000BE40F /* Parabopolis.app */;
 			productType = "com.apple.product-type.application";
-		};
-		C266E11419A9C8D7000BE40F /* CrayonCannonTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C266E12219A9C8D7000BE40F /* Build configuration list for PBXNativeTarget "CrayonCannonTests" */;
-			buildPhases = (
-				C266E11119A9C8D7000BE40F /* Sources */,
-				C266E11219A9C8D7000BE40F /* Frameworks */,
-				C266E11319A9C8D7000BE40F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C266E11719A9C8D7000BE40F /* PBXTargetDependency */,
-			);
-			name = CrayonCannonTests;
-			productName = CrayonCannonTests;
-			productReference = C266E11519A9C8D7000BE40F /* CrayonCannonTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -216,13 +165,9 @@
 					C266E0FC19A9C8D6000BE40F = {
 						CreatedOnToolsVersion = 6.0;
 					};
-					C266E11419A9C8D7000BE40F = {
-						CreatedOnToolsVersion = 6.0;
-						TestTargetID = C266E0FC19A9C8D6000BE40F;
-					};
 				};
 			};
-			buildConfigurationList = C266E0F819A9C8D6000BE40F /* Build configuration list for PBXProject "CrayonCannon" */;
+			buildConfigurationList = C266E0F819A9C8D6000BE40F /* Build configuration list for PBXProject "Parabopolis" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -241,8 +186,7 @@
 			);
 			projectRoot = "";
 			targets = (
-				C266E0FC19A9C8D6000BE40F /* CrayonCannon */,
-				C266E11419A9C8D7000BE40F /* CrayonCannonTests */,
+				C266E0FC19A9C8D6000BE40F /* Parabopolis */,
 			);
 		};
 /* End PBXProject section */
@@ -274,13 +218,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C266E11319A9C8D7000BE40F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -291,26 +228,14 @@
 				C266E10919A9C8D6000BE40F /* GameViewController.swift in Sources */,
 				C266E10519A9C8D6000BE40F /* AppDelegate.swift in Sources */,
 				C266E10719A9C8D6000BE40F /* GameView.swift in Sources */,
+				C25DCD3719AB44DC005AACB2 /* Notes.md in Sources */,
 				C266E10319A9C8D6000BE40F /* main.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C266E11119A9C8D7000BE40F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C266E11C19A9C8D7000BE40F /* CrayonCannonTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		C266E11719A9C8D7000BE40F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C266E0FC19A9C8D6000BE40F /* CrayonCannon */;
-			targetProxy = C266E11619A9C8D7000BE40F /* PBXContainerItemProxy */;
-		};
 		C266E13219A9E8F1000BE40F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SceneKrift;
@@ -422,9 +347,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = CrayonCannon/Info.plist;
+				INFOPLIST_FILE = Parabopolis/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Parabopolis;
 			};
 			name = Debug;
 		};
@@ -433,52 +358,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = CrayonCannon/Info.plist;
+				INFOPLIST_FILE = Parabopolis/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		C266E12319A9C8D7000BE40F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = CrayonCannonTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CrayonCannon.app/Contents/MacOS/CrayonCannon";
-			};
-			name = Debug;
-		};
-		C266E12419A9C8D7000BE40F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = CrayonCannonTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CrayonCannon.app/Contents/MacOS/CrayonCannon";
+				PRODUCT_NAME = Parabopolis;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C266E0F819A9C8D6000BE40F /* Build configuration list for PBXProject "CrayonCannon" */ = {
+		C266E0F819A9C8D6000BE40F /* Build configuration list for PBXProject "Parabopolis" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C266E11D19A9C8D7000BE40F /* Debug */,
@@ -487,20 +376,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C266E11F19A9C8D7000BE40F /* Build configuration list for PBXNativeTarget "CrayonCannon" */ = {
+		C266E11F19A9C8D7000BE40F /* Build configuration list for PBXNativeTarget "Parabopolis" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C266E12019A9C8D7000BE40F /* Debug */,
 				C266E12119A9C8D7000BE40F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C266E12219A9C8D7000BE40F /* Build configuration list for PBXNativeTarget "CrayonCannonTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C266E12319A9C8D7000BE40F /* Debug */,
-				C266E12419A9C8D7000BE40F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

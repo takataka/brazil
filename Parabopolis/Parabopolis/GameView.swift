@@ -14,7 +14,7 @@ func randFloat() -> CGFloat {
 }
 
 class GameView: OVRView {
-    let player = SCNNode(geometry: SCNSphere(radius: 1))
+    let player = SCNNode(geometry: SCNSphere(radius: 2))
     
     let possibleGeometries = [
 //        SCNCone(topRadius: 0, bottomRadius: 1, height: 1),
@@ -60,7 +60,6 @@ class GameView: OVRView {
         let floor = SCNFloor()
         let floorNode = SCNNode(geometry:floor)
         floorNode.physicsBody = SCNPhysicsBody(type: .Static, shape: nil)
-        floorNode.position = SCNVector3(x: 0, y: -10, z: 0)
         floor.firstMaterial.diffuse.contents = NSColor.whiteColor()
         scene.rootNode.addChildNode(floorNode)
         self.createPlayer()
@@ -113,6 +112,7 @@ class GameView: OVRView {
     }
     
     func createPlayer() {
+        player.position = SCNVector3(x: 0, y: 1, z: 0)
         player.physicsBody = SCNPhysicsBody(type: .Dynamic, shape: nil)
         player.physicsBody.rollingFriction = 1
         player.physicsBody.angularDamping = 1
@@ -130,36 +130,27 @@ class GameView: OVRView {
         println("Key: \(theEvent.keyCode)")
         let (left:UInt16, right:UInt16, down:UInt16, up:UInt16) = (123, 124, 125, 126)
         let enter:UInt16 = 36
+        SCNTransaction.begin()
+        SCNTransaction.setAnimationDuration(0.5)
         switch theEvent.keyCode {
         case left:
-            player.runAction(
-                SCNAction.rotateByAngle(-1,
-                    aroundAxis: SCNVector3(x: 0, y: 1, z: 0),
-                    duration: 0.5))
+            player.transform = SCNMatrix4Rotate(player.transform, 0.3, 0, 1, 0)
         case right:
-            player.runAction(
-                SCNAction.rotateByAngle(1,
-                    aroundAxis: SCNVector3(x: 0, y: 1, z: 0),
-                    duration: 0.5))
+            player.transform = SCNMatrix4Rotate(player.transform, -0.3, 0, 1, 0)
         case up:
-            player.runAction(
-                SCNAction.rotateByAngle(1,
-                    aroundAxis: SCNVector3(x: 1, y: 0, z: 0),
-                    duration: 0.5))
+            player.transform = SCNMatrix4Rotate(player.transform, -0.3, 1, 0, 0)
         case down:
-            player.runAction(
-                SCNAction.rotateByAngle(-1,
-                    aroundAxis: SCNVector3(x: 1, y: 0, z: 0),
-                    duration: 0.5))
+            player.transform = SCNMatrix4Rotate(player.transform, 0.3, 1, 0, 0)
         case enter:
             player.physicsBody.applyForce(
                 SCNVector3(
-                    x: player.rotation.x * 10,
-                    y: player.rotation.y * 10,
-                    z: player.rotation.z * 10),
+                    x: player.rotation.x * 500,
+                    y: player.rotation.y * 500,
+                    z: player.rotation.z * 500),
                 impulse: true)
         default:
-            return
+            println("wha")
         }
+        SCNTransaction.commit()
     }
 }
